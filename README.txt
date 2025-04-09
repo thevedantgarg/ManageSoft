@@ -8,3 +8,13 @@ Due Date: 5/2/2025
 Overview:
 This is a web-based application designed for company representatives to manage customer data, orders, and inventory.
 In order to access the database, representatives must authenticate using a valid username and password.
+
+System Features:
+Once logged into the system, representatives can:
+- 
+
+Tech Stack:
+
+System Requirements:
+
+Installation Requirements:

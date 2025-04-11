@@ -7,11 +7,15 @@ Project: Term Project
 Due Date: 5/2/2025
 =============================================
 
+---------------------------------------------
 Overview:
+---------------------------------------------
 This is a web-based application designed for company representatives to manage customer data, orders, and inventory.
 In order to access the database, representatives must authenticate using a valid username and password.
 
+---------------------------------------------
 System Features:
+---------------------------------------------
 Once logged into the system, representatives can:
 - Generate a report for each representative listing:
   - Customer's assigned to representative
@@ -22,18 +26,24 @@ Once logged into the system, representatives can:
 - Update a customer's credit limit, taking the customer name as input
 - Exit the system
 
+---------------------------------------------
 Tech Stack:
+---------------------------------------------
 - Frontend:
 - Backend:
 - Database:
 - Server:
 
+---------------------------------------------
 System Requirements:
+---------------------------------------------
 - Operating System:
 - Web Browser:
 - Other:
 
+---------------------------------------------
 Installation Instructions:
+---------------------------------------------
 1. Download and unzip the file on your machine.
 
 2. Open blah blah blah blah

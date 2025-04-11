@@ -15,12 +15,25 @@ System Features:
 Once logged into the system, representatives can:
 - Generate a report for each representative listing:
   - Customer's assigned to representative
-  - Average balance of customer's assigned to representative
+  - The average balance of customer's assigned to representative
   - Representative's first and last name
-- 
+- Generate a report that displays the total quoted price of all the orders from a given customer, taking the customer name as input.
+- Add a new representative
+- Update a customer's credit limit, taking the customer name as input
+- Exit the system
 
 Tech Stack:
+- Frontend:
+- Backend:
+- Database:
+- Server:
 
 System Requirements:
+- Operating System:
+- Web Browser:
+- Other:
 
-Installation Requirements:
+Installation Instructions:
+1. Download and unzip the file on your machine.
+
+2. Open blah blah blah blah

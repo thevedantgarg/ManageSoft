@@ -44,6 +44,10 @@ System Requirements:
 ---------------------------------------------
 Installation Instructions:
 ---------------------------------------------
-1. Download and unzip the file on your machine.
+1. Download and unzip the folder on your machine.
 
-2. Open the 
+2. Open the file named "index.php" included in the folder.
+
+3. Enter the name of the manager in the username slot, and enter the 
+
+4. 

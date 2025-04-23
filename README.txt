@@ -48,6 +48,4 @@ Installation Instructions:
 
 2. Open the file named "index.php" included in the folder.
 
-3. Enter the name of the manager in the username slot, and enter the 
-
-4. 
+3. Huzzah! You're all set.

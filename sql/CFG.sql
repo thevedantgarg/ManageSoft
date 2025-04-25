@@ -9,7 +9,8 @@ City CHAR(15),
 State CHAR(2),
 PostalCode CHAR(5),
 Commission DECIMAL(7,2),
-Rate DECIMAL(3,2) );
+Rate DECIMAL(3,2),
+Password VARCHAR(60));
 
 CREATE TABLE Customer
 (CustomerNum CHAR(3) PRIMARY KEY,
@@ -44,16 +45,16 @@ PRIMARY KEY (OrderNum, ItemNum) );
 
 INSERT INTO REP
 VALUES
-('15','Campos','Rafael','724 Vinca Dr.','Grove','CA','90092',23457.50,0.06);
+('15','Campos','Rafael','724 Vinca Dr.','Grove','CA','90092',23457.50,0.06, 'hello');
 INSERT INTO REP
 VALUES
-('30','Gradey','Megan','632 Liatris St.','Fullton','CA','90085',41317.00,0.08);
+('30','Gradey','Megan','632 Liatris St.','Fullton','CA','90085',41317.00,0.08, 'hello');
 INSERT INTO REP
 VALUES
-('45','Tian','Hui','1785 Tyler Ave.','Northfield','CA','90098',27789.25,0.06);
+('45','Tian','Hui','1785 Tyler Ave.','Northfield','CA','90098',27789.25,0.06, 'hello');
 INSERT INTO REP
 VALUES
-('60','Sefton','Janet','267 Oakley St.','Congaree','CA','90097',0.00,0.06);
+('60','Sefton','Janet','267 Oakley St.','Congaree','CA','90097',0.00,0.06, 'hello');
 INSERT INTO CUSTOMER
 VALUES
 ('126','Toys Galore','28 Laketon St.','Fullton','CA','90085',1210.25,7500.00,'15');

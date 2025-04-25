@@ -8,7 +8,7 @@ if (!isset($_SESSION['rep_num'])) {
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/styles.css">
   <title>BankBridge Dashboard</title>
 </head>
 <body>

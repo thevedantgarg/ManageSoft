@@ -37,13 +37,15 @@ Tech Stack:
 ---------------------------------------------
 System Requirements:
 ---------------------------------------------
-- Operating System:
-- Web Browser:
-- Other:
+- Operating System: Any
+- Web Browser: Any
+- Other: 
 
 ---------------------------------------------
 Installation Instructions:
 ---------------------------------------------
-1. Download and unzip the file on your machine.
+1. Download and unzip the folder on your machine.
 
-2. Open blah blah blah blah
+2. Open the file named "index.php" included in the folder.
+
+3. Huzzah! You're all set.

@@ -1,5 +1,36 @@
-body { font-family: sans-serif; max-width:800px; margin:auto; padding:1em; }
-nav a { margin:0 .5em; }
-table { width:100%; border-collapse:collapse; margin-top:1em; }
-th, td { border:1px solid #ccc; padding:.5em; text-align:left; }
-.error { color:red; }
+body {
+    font-family: sans-serif;
+    max-width:800px; 
+    margin:auto; 
+}
+
+nav a { 
+    margin:0 .5em;
+}
+
+table { 
+    width:100%; 
+    border-collapse:collapse; 
+    margin-top:1em; 
+}
+
+th, td { 
+    border:1px solid #ccc; 
+    padding:.5em; 
+    text-align:left; 
+}
+
+.error { 
+    color:red; 
+}
+
+.login{
+    width: fit-content;
+    margin: auto;
+    padding-top: 30%;
+}
+
+.addRepForm label {
+    display: block;
+    margin: 25px;
+}

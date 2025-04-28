@@ -18,8 +18,8 @@ System Features:
 ---------------------------------------------
 Once logged into the system, representatives can:
 - Generate a report for each representative listing:
-  - Customer's assigned to representative
-  - The average balance of customer's assigned to representative
+  - Customers assigned to representative
+  - The average balance of customers assigned to representative
   - Representative's first and last name
 - Generate a report that displays the total quoted price of all the orders from a given customer, taking the customer name as input.
 - Add a new representative

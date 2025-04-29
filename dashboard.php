@@ -12,9 +12,11 @@ if (!isset($_SESSION['rep_num'])) {
   <title>BankBridge Dashboard</title>
 </head>
 <body>
-  <h1>Welcome, <?=htmlspecialchars($_SESSION['rep_name'])?></h1>
-
-  <h2 id="report1">1. Customers per Representative</h2>
+  <div class="Header">
+<h1>Welcome, <?=htmlspecialchars($_SESSION['rep_name'])?>!</h1>
+</div>
+  
+<h2 id="report1">1. Customers per Representative</h2>
 <?php
 $sql = "
   SELECT r.RepNum, r.FirstName, r.LastName,
@@ -31,13 +33,13 @@ $rows = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
   <?php foreach($rows as $r): ?>
     <tr>
       <td><?=$r['RepNum']?></td>
-      <td><?=htmlspecialchars($r['FirstName'].' '.$r['LastName'])?></td>
+      <td class="custName"><?=htmlspecialchars($r['FirstName'].' '.$r['LastName'])?></td>
       <td><?=$r['num_customers']?></td>
-      <td><?=number_format($r['avg_balance'],2)?></td>
+      <td class="red-text"><?=number_format($r['avg_balance'],2)?></td>
     </tr>
   <?php endforeach; ?>
 </table>
-
+<div class="report-2">
 <h2 id="report2">2. Total Order Value</h2>
 <form method="GET">
   Customer Number: <input name="custnum" required>
@@ -55,7 +57,8 @@ $rows = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 ?>
   <p>Total for <?=htmlspecialchars($_GET['custnum'])?>: $<?=number_format($tot,2)?></p>
 <?php endif; ?>
-
+</div>
+<div class="Add-rep">
 <h2 id="addrep">3. Add New Rep</h2>
 <form method="POST" action="#addrep" class="addRepForm">
   <!-- inputs: repnum, firstname, lastname, street, city, state, postal, commission, rate, password -->
@@ -87,11 +90,12 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['repnum'])) {
   echo "<p>New Representative {$_POST['repnum']} added.</p>";
 }
 ?>
-
+</div>
+<div class="upd-credit">
 <h2 id="updcredit">4. Update Customer Credit</h2>
 <form method="POST" action="#updcredit" style="margin-bottom: 25px;">
-  Customer Number: <input name="custnum" required>
-  New Limit:    <input name="newlimit" type="number" step="0.01" required>
+        Customer Number: <input name="custnum" required>
+        New Limit:    <input name="newlimit" type="number" step="0.01" required>
   <button>Update</button>
 </form>
 <?php
@@ -107,5 +111,6 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['custnum'])) {
   echo "<p>Credit for {$_POST['custnum']} updated.</p>";
 }
 ?>
+</div>
 </body>
 </html>

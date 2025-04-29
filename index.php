@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title><center>BankBridge Login</center></title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/indexstyle.css">
 </head>
 <body>
   <div class="login">

@@ -41,7 +41,7 @@ $rows = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 </table>
 <div class="report-2">
 <h2 id="report2">2. Total Order Value</h2>
-<form method="GET">
+<form method="GET" class="custNumForm">
   Customer Number: <input name="custnum" required>
   <button>Go</button>
 </form>
@@ -93,10 +93,10 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['repnum'])) {
 </div>
 <div class="upd-credit">
 <h2 id="updcredit">4. Update Customer Credit</h2>
-<form method="POST" action="#updcredit" style="margin-bottom: 25px;">
-        Customer Number: <input name="custnum" required>
+<form method="POST" action="#updcredit">
+        Customer Number: <input name="custnum" required> <br>
         New Limit:    <input name="newlimit" type="number" step="0.01" required>
-  <button>Update</button>
+  <br> <button>Update</button>
 </form>
 <?php
 if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['custnum'])) {
@@ -111,6 +111,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['custnum'])) {
   echo "<p>Credit for {$_POST['custnum']} updated.</p>";
 }
 ?>
+
 </div>
 </body>
 </html>

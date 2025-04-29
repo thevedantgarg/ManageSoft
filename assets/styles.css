@@ -35,10 +35,10 @@ th, td {
     padding-top: 30%;
 }
 
-.addRepForm label {
-    display: block;
-    margin: 25px;
-    color: white; /* Ensure form labels are white */
+.addRepForm label, .addRepForm{
+    display: grid;
+    text-align: left;
+    margin: 10px;
 }
 
 input, select, textarea {
@@ -69,7 +69,7 @@ button {
     font-weight: bold;
 }
 
-#report1,#report2, #updcredit {
+#report1 {
     text-align: center;
     color: white;
 }
@@ -78,28 +78,45 @@ button {
     color:white;
 }
 
-h2, p {
-    margin-left: 20px;
-    color: white;
+.report-2 h2, .Add-rep h2, .upd-credit h2 {
+    width: fit-content;
+    display: block;
+    margin: 15px auto;
 }
+
+.upd-credit form {
+    display: grid;
+    text-align: left;
+    margin: 25px;
+}
+
 .report-2{
-justify-content: center;
-text-align: center;
-border:5px groove;
-border-radius:5px;
-width:20%;
-margin:auto;
-margin-top:20px;
+    justify-content: center;
+    text-align: start;
+    border:10px groove;
+    border-radius:5px;
+    width:25%;
+    margin:auto;
+    margin-top:20px;
+    padding-bottom: 15px;
+    display: grid;
+}
+
+.custNumForm  {
+    display: grid;
+    text-align: left;
 }
 .Add-rep{
     border:groove 10px;
     border-radius:5px;
-    width:fit-content;
+    width:25%;
+    margin: 15px auto;
 }
+
 .upd-credit{
 justify-content: center;
 text-align: center;
-border:5px groove;
+border:10px groove;
 border-radius:5px;
 width:25%;
 margin:auto;

@@ -42,7 +42,7 @@ $rows = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 <div class="report-2">
 <h2 id="report2">2. Total Order Value</h2>
 <form method="GET" class="custNumForm">
-  Customer Number: <input name="custnum" required>
+  Customer Number: <input name="custnum" required> <br>
   <button>Go</button>
 </form>
 <?php if(!empty($_GET['custnum'])):
@@ -59,10 +59,10 @@ $rows = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 <?php endif; ?>
 </div>
 <div class="Add-rep">
-<h2 id="addrep">3. Add New Rep</h2>
+<h2 id="addrep">3. Add New Representative</h2>
 <form method="POST" action="#addrep" class="addRepForm">
   <!-- inputs: repnum, firstname, lastname, street, city, state, postal, commission, rate, password -->
-  <label>Rep Number:   <input type="text"     name="repnum"      required></label><br>
+  <label>Representative Number:   <input type="text"     name="repnum"      required></label><br>
   <label>First Name:   <input type="text"     name="firstname"   required></label><br>
   <label>Last Name:    <input type="text"     name="lastname"    required></label><br>
   <label>Street:       <input type="text"     name="street"      required></label><br>
@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['custnum'])) {
     ':lim'=>$_POST['newlimit'],
     ':c'  =>$_POST['custnum']
   ]);
-  echo "<p>Credit for {$_POST['custnum']} updated.</p>";
+  echo "<p>Credit for Customer {$_POST['custnum']} updated.</p>";
 }
 ?>
 

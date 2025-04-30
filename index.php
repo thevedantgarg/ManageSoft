@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title><center>BankBridge Login</center></title>
+  <title><center>ManageSoft Login</center></title>
   <link rel="stylesheet" href="assets/indexstyle.css">
 </head>
 <body>

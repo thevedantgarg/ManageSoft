@@ -9,7 +9,7 @@ if (!isset($_SESSION['rep_num'])) {
 <html>
 <head>
   <link rel="stylesheet" href="assets/styles.css">
-  <title>BankBridge Dashboard</title>
+  <title>ManageSoft Dashboard</title>
 </head>
 <body>
   <div class="Header">

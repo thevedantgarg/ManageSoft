@@ -29,17 +29,17 @@ Once logged into the system, representatives can:
 ---------------------------------------------
 Tech Stack:
 ---------------------------------------------
-- Frontend:
-- Backend:
-- Database:
-- Server:
+- Frontend: HTML5 and CSS3 through PHP in index.php and dashboard.php
+- Backend: PHP8
+- Database: MySQL
+- Server: Any web server that can run PHP
 
 ---------------------------------------------
 System Requirements:
 ---------------------------------------------
-- Operating System: Any
-- Web Browser: Any
-- Other: 
+- Operating System: Windows, macOS, or Linux
+- Web Browser: Any modern standards-compliant web browser
+- Other: PHP8 and a running instance of MySQL available to the application
 
 ---------------------------------------------
 Installation Instructions:
@@ -48,4 +48,4 @@ Installation Instructions:
 
 2. Open the file named "index.php" included in the folder.
 
-3. Huzzah! You're all set.
+3. You're all set. Go ahead and log in.

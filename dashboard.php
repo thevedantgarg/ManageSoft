@@ -113,5 +113,10 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['custnum'])) {
 ?>
 
 </div>
+<div class="logout">
+  <form method="POST" action="logout.php">
+    <button type="submit">Logout</button>
+  </form>
+</div>
 </body>
 </html>
